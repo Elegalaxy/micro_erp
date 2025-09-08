@@ -1,0 +1,66 @@
+UserProfile
+- uid
+- email
+- password
+- username
+- role
+- created_on
+
+Items
+- id
+- name
+- sku
+- unit
+- cost
+- price
+- tags
+- supplier
+- created_on
+
+Inventory
+- id
+- item_id
+- item_name
+- amount
+- location
+- threshold
+- created_on
+
+BOM
+- id
+- item_id
+- item_name
+- material [
+    - item_id
+    - item_name
+    - amount
+]
+- created_on
+
+Order
+- id
+- customer_id
+- item_list [
+    - item_id
+    - item_name
+    - amount
+]
+- due_date
+- total_price
+- status (draft, pending, progress, finish, failed)
+- created_on
+
+Customer
+- id
+- name
+- phone
+- address
+- created_on
+
+Supplier
+- id
+- name
+- phone
+- address
+- created_on
+
